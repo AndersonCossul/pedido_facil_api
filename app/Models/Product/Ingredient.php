@@ -1,14 +1,13 @@
 <?php
-namespace App\Models;
+namespace App\Models\Product;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Additional extends Model
+class Ingredient extends Model
 {
-    protected $table = 'product_additionals';
+    protected $table = 'product_ingredients';
     protected $fillabe = [
         'name',
-        'price',
         'status'
     ];
 }
