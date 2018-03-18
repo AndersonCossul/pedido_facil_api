@@ -9,6 +9,7 @@ class CardsTableMigration extends Migration
     public function up()
     {
         Schema::create('cards', function(Blueprint $table) {
+            $table->increments('id');
             $table->string('name');
             $table->tinyInteger('status');
         });
