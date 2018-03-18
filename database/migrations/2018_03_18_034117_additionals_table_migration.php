@@ -8,7 +8,7 @@ class AdditionalsTableMigration extends Migration
 {
     public function up()
     {
-        Schema::create('additionals', function(Blueprint $table) {
+        Schema::create('product_additionals', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->double('price');
@@ -18,6 +18,6 @@ class AdditionalsTableMigration extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('additionals');
+        Schema::dropIfExists('product_additionals');
     }
 }

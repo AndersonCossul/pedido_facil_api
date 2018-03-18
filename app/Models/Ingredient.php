@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ingredient extends Model
 {
-    protected $table = 'ingredients';
+    protected $table = 'product_ingredients';
     protected $fillabe = [
         'name',
         'status'

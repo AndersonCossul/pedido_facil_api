@@ -8,7 +8,7 @@ class IngredientsTableMigration extends Migration
 {
     public function up()
     {
-        Schema::create('ingredients', function(Blueprint $table) {
+        Schema::create('product_ingredients', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->tinyInteger('status');
@@ -17,6 +17,6 @@ class IngredientsTableMigration extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('ingredients');
+        Schema::dropIfExists('product_ingredients');
     }
 }
