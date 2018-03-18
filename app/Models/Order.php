@@ -15,4 +15,24 @@ class Order extends Model
         'date',
         'status'
     ];
+
+    public function getCartao()
+    {
+        return $this->belongsTo('App\Models\Card', 'cartao_id');
+    }
+
+    public function getTable()
+    {
+        return $this->belongsTo('App\Models\Table', 'table_id');
+    }
+
+    public function waiters()
+    {
+        return $this->hasMany('App\Models\Waiter');
+    }
+
+    public function getProducts()
+    {
+        return $this->hasMany('App\Models\Product\Product');
+    }
 }
