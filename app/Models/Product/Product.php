@@ -14,4 +14,24 @@ class Product extends Model
         'group_id',
         'status'
     ];
+
+    public function getIngredients()
+    {
+        return $this->hasMany('App\Models\Product\Ingredient');
+    }
+
+    public function getAdditionals()
+    {
+        return $this->hasMany('App\Models\Product\Additional');
+    }
+
+    public function getCategory()
+    {
+        return $this->belongsTo('App\Models\Category', 'category_id');
+    }
+
+    public function getGroup()
+    {
+        return $this->belongsTo('App\Models\Group', 'group_id');
+    }
 }
