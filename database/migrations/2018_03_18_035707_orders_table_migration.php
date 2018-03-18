@@ -13,7 +13,6 @@ class OrdersTableMigration extends Migration
             $table->string('name');
             $table->integer('card_id');
             $table->integer('table_id');
-            $table->integer('waiter_id');
             $table->tinyInteger('print_status');
             $table->double('total_value');
             $table->date('date');

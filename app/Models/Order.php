@@ -10,7 +10,6 @@ class Order extends Model
         'name',
         'card_id',
         'table_id',
-        'waiter_id',
         'print_status',
         'total_value',
         'date',
