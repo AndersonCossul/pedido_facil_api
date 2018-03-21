@@ -1,0 +1,118 @@
+\hypertarget{class_app_1_1_models_1_1_product_1_1_product}{}\section{Product Class Reference}
+\label{class_app_1_1_models_1_1_product_1_1_product}\index{Product@{Product}}
+
+
+Inheritance diagram for Product\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_app_1_1_models_1_1_product_1_1_product__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Product\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_app_1_1_models_1_1_product_1_1_product__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_product_a3ee17085a1e0dbe24e05f504147deb8a}{get\+Ingredients}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_product_a6f78a9ab9472f9f82fe70dd84d6c5e5c}{get\+Additionals}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_product_ada0bf69887885f455ebdfbe878e14543}{get\+Category}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_product_a4f44e7bc9de772c21b4304d11e87bf16}{get\+Group}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_app_1_1_models_1_1_product_1_1_product_ae8876a14058f368335baccf35af4a22b}\label{class_app_1_1_models_1_1_product_1_1_product_ae8876a14058f368335baccf35af4a22b}} 
+{\bfseries \$table} = \textquotesingle{}products\textquotesingle{}
+\item 
+{\bfseries \$fillabe}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a product. This can be any food or drink. It\textquotesingle{}s connected to several classes\+: \mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_additional}{Additional}}, \mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_category}{Category}}, \mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_group}{Group}}, \mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_ingredient}{Ingredient}}
+
+Accepts name\+: string, price\+: double, stock\+\_\+quantity\+: integer, category\+\_\+id\+: integer, group\+\_\+id\+: integer, status\+: tiny\+Integer. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_product_1_1_product_a6f78a9ab9472f9f82fe70dd84d6c5e5c}\label{class_app_1_1_models_1_1_product_1_1_product_a6f78a9ab9472f9f82fe70dd84d6c5e5c}} 
+\index{App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}!get\+Additionals@{get\+Additionals}}
+\index{get\+Additionals@{get\+Additionals}!App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}}
+\subsubsection{\texorpdfstring{get\+Additionals()}{getAdditionals()}}
+{\footnotesize\ttfamily get\+Additionals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of additionals that can be attached to the product.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_product_1_1_product_ada0bf69887885f455ebdfbe878e14543}\label{class_app_1_1_models_1_1_product_1_1_product_ada0bf69887885f455ebdfbe878e14543}} 
+\index{App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}}
+\subsubsection{\texorpdfstring{get\+Category()}{getCategory()}}
+{\footnotesize\ttfamily get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_category}{Category}} Object that this product belongs.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_product_1_1_product_a4f44e7bc9de772c21b4304d11e87bf16}\label{class_app_1_1_models_1_1_product_1_1_product_a4f44e7bc9de772c21b4304d11e87bf16}} 
+\index{App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}!get\+Group@{get\+Group}}
+\index{get\+Group@{get\+Group}!App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}}
+\subsubsection{\texorpdfstring{get\+Group()}{getGroup()}}
+{\footnotesize\ttfamily get\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{class_app_1_1_models_1_1_product_1_1_group}{Group}} Object that this product belongs.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_product_1_1_product_a3ee17085a1e0dbe24e05f504147deb8a}\label{class_app_1_1_models_1_1_product_1_1_product_a3ee17085a1e0dbe24e05f504147deb8a}} 
+\index{App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}!get\+Ingredients@{get\+Ingredients}}
+\index{get\+Ingredients@{get\+Ingredients}!App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}}
+\subsubsection{\texorpdfstring{get\+Ingredients()}{getIngredients()}}
+{\footnotesize\ttfamily get\+Ingredients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of optionals ingredients for this product. Not all ingredients are stored in the database, just the ones that are optionals.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_product_1_1_product_ac5c29ce22e45a54200f88204e498d290}\label{class_app_1_1_models_1_1_product_1_1_product_ac5c29ce22e45a54200f88204e498d290}} 
+\index{App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}!\$fillabe@{\$fillabe}}
+\index{\$fillabe@{\$fillabe}!App\+::\+Models\+::\+Product\+::\+Product@{App\+::\+Models\+::\+Product\+::\+Product}}
+\subsubsection{\texorpdfstring{\$fillabe}{$fillabe}}
+{\footnotesize\ttfamily \$fillabe\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'name'},
+        \textcolor{stringliteral}{'price'},
+        \textcolor{stringliteral}{'stock\_quantity'},
+        \textcolor{stringliteral}{'category\_id'},
+        \textcolor{stringliteral}{'group\_id'},
+        \textcolor{stringliteral}{'status'}
+    ]
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/\+Product/Product.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,119 @@
+\hypertarget{class_app_1_1_models_1_1_order}{}\section{Order Class Reference}
+\label{class_app_1_1_models_1_1_order}\index{Order@{Order}}
+
+
+Inheritance diagram for Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=123pt]{class_app_1_1_models_1_1_order__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Order\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=123pt]{class_app_1_1_models_1_1_order__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_order_af3296e61356149835fcdba50e4075f56}{get\+Card}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_order_aa0dd4bf57d57bc2a3697e40c9f6bddce}{get\+Table}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_order_aa314a2ddd62ccb42f5a3f80ee8c316e1}{waiters}} ()
+\item 
+\mbox{\hyperlink{class_app_1_1_models_1_1_order_a9686a480a1adb1923d64e71cf0624275}{get\+Products}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_app_1_1_models_1_1_order_ae8876a14058f368335baccf35af4a22b}\label{class_app_1_1_models_1_1_order_ae8876a14058f368335baccf35af4a22b}} 
+{\bfseries \$table} = \textquotesingle{}orders\textquotesingle{}
+\item 
+{\bfseries \$fillabe}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an order. It\textquotesingle{}s connected to several other classes\+: \mbox{\hyperlink{class_app_1_1_models_1_1_card}{Card}}, \mbox{\hyperlink{class_app_1_1_models_1_1_table}{Table}}, \mbox{\hyperlink{class_app_1_1_models_1_1_waiter}{Waiter}}, Product.
+
+Accepts name\+: string, card\+\_\+id\+: integer, table\+\_\+id\+: integer, print\+\_\+status\+: tiny\+Integer, total\+\_\+value\+: double, date\+: Date, status\+: tiny\+Integer. Print Status represents if the order was already printed in a scanner, is being printed or indicates an error. Status represents if the order is still open or was already closed. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_order_af3296e61356149835fcdba50e4075f56}\label{class_app_1_1_models_1_1_order_af3296e61356149835fcdba50e4075f56}} 
+\index{App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}!get\+Card@{get\+Card}}
+\index{get\+Card@{get\+Card}!App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}}
+\subsubsection{\texorpdfstring{get\+Card()}{getCard()}}
+{\footnotesize\ttfamily get\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{class_app_1_1_models_1_1_card}{Card}} Object used in the order.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_order_a9686a480a1adb1923d64e71cf0624275}\label{class_app_1_1_models_1_1_order_a9686a480a1adb1923d64e71cf0624275}} 
+\index{App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}!get\+Products@{get\+Products}}
+\index{get\+Products@{get\+Products}!App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}}
+\subsubsection{\texorpdfstring{get\+Products()}{getProducts()}}
+{\footnotesize\ttfamily get\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of Product of the order.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_order_aa0dd4bf57d57bc2a3697e40c9f6bddce}\label{class_app_1_1_models_1_1_order_aa0dd4bf57d57bc2a3697e40c9f6bddce}} 
+\index{App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}!get\+Table@{get\+Table}}
+\index{get\+Table@{get\+Table}!App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}}
+\subsubsection{\texorpdfstring{get\+Table()}{getTable()}}
+{\footnotesize\ttfamily get\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the \mbox{\hyperlink{class_app_1_1_models_1_1_table}{Table}} Object for the order.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_order_aa314a2ddd62ccb42f5a3f80ee8c316e1}\label{class_app_1_1_models_1_1_order_aa314a2ddd62ccb42f5a3f80ee8c316e1}} 
+\index{App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}!waiters@{waiters}}
+\index{waiters@{waiters}!App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}}
+\subsubsection{\texorpdfstring{waiters()}{waiters()}}
+{\footnotesize\ttfamily waiters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns an array of \mbox{\hyperlink{class_app_1_1_models_1_1_waiter}{Waiter}} objects related to this \mbox{\hyperlink{class_app_1_1_models_1_1_order}{Order}}.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{class_app_1_1_models_1_1_order_ac5c29ce22e45a54200f88204e498d290}\label{class_app_1_1_models_1_1_order_ac5c29ce22e45a54200f88204e498d290}} 
+\index{App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}!\$fillabe@{\$fillabe}}
+\index{\$fillabe@{\$fillabe}!App\+::\+Models\+::\+Order@{App\+::\+Models\+::\+Order}}
+\subsubsection{\texorpdfstring{\$fillabe}{$fillabe}}
+{\footnotesize\ttfamily \$fillabe\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= [
+        \textcolor{stringliteral}{'name'},
+        \textcolor{stringliteral}{'card\_id'},
+        \textcolor{stringliteral}{'table\_id'},
+        \textcolor{stringliteral}{'print\_status'},
+        \textcolor{stringliteral}{'total\_value'},
+        \textcolor{stringliteral}{'date'},
+        \textcolor{stringliteral}{'status'}
+    ]
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Models/Order.\+php\end{DoxyCompactItemize}
