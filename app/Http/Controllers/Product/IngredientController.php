@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Product;
 
 /**
- * Controller for the product categories.
+ * Controller for the product ingredients.
  */
-class CategoryController extends Controller
+class IngredientController extends Controller
 {
     private $repository;
 
@@ -20,18 +20,18 @@ class CategoryController extends Controller
     }
 
     /**
-     * Returns all the categories.
+     * Returns all the ingredients.
      *
      * @return array
      */
     public function index()
     {
-        $categories = $this->repository->all();
-        dd($categories);
+        $ingredients = $this->repository->all();
+        dd($ingredients);
     }
 
     /**
-     * Store a new category.
+     * Store a new ingredient.
      *
      * @return boolean
      */
@@ -42,7 +42,7 @@ class CategoryController extends Controller
     }
 
      /**
-     * Update a category.
+     * Update an ingredient.
      *
      * @return boolean
      */
@@ -53,7 +53,7 @@ class CategoryController extends Controller
     }
 
      /**
-     * Delete a category.
+     * Delete an ingredient.
      *
      * @return boolean
      */
