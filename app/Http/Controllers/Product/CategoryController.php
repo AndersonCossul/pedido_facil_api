@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 /**
- * Controller for the product additionals.
+ * Controller for the product categories.
  */
-class AdditionalController extends Controller
+class CategoryController extends Controller
 {
     private $repository;
 
@@ -20,18 +20,18 @@ class AdditionalController extends Controller
     }
 
     /**
-     * Returns all the additionals.
+     * Returns all the categories.
      *
      * @return array
      */
     public function index()
     {
-        $additionals = $this->repository->all();
-        dd($additionals);
+        $categories = $this->repository->all();
+        dd($categories);
     }
 
     /**
-     * Store a new additional.
+     * Store a new category.
      *
      * @return boolean
      */
@@ -42,7 +42,7 @@ class AdditionalController extends Controller
     }
 
      /**
-     * Update an additional.
+     * Update a category.
      *
      * @return boolean
      */
@@ -53,7 +53,7 @@ class AdditionalController extends Controller
     }
 
      /**
-     * Delete an additional.
+     * Delete a category.
      *
      * @return boolean
      */
