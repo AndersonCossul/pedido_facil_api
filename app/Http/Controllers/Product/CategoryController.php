@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Product;
 
+use App\Http\Controllers\Controller;
+
 /**
  * Controller for the product categories.
  */
