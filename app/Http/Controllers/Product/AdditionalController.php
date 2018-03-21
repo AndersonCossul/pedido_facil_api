@@ -22,14 +22,25 @@ class AdditionalController extends Controller
     }
 
     /**
-     * Returns all the additionals.
+     * Returns an array of Additional objects.
      *
      * @return array
      */
-    public function index()
+    public function all()
     {
         $additionals = $this->repository->all();
         dd($additionals);
+    }
+
+     /**
+     * Returns an Additional Object with the provided id.
+     *
+     * @return object
+     */
+    public function get($id)
+    {
+        $additional = $this->repository->find($id);
+        dd($additional);
     }
 
     /**

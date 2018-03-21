@@ -22,14 +22,25 @@ class ProductController extends Controller
     }
 
     /**
-     * Returns all the products.
+     * Returns an array of Product objects.
      *
      * @return array
      */
-    public function index()
+    public function all()
     {
         $products = $this->repository->all();
         dd($products);
+    }
+
+    /**
+     * Returns an Product Object with the provided id.
+     *
+     * @return object
+     */
+    public function get($id)
+    {
+        $additional = $this->repository->find($id);
+        dd($additional);
     }
 
     /**

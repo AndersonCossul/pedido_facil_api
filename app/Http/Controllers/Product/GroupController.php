@@ -22,14 +22,25 @@ class GroupController extends Controller
     }
 
     /**
-     * Returns all the groups.
+     * Returns an array of Group objects.
      *
      * @return array
      */
-    public function index()
+    public function all()
     {
         $groups = $this->repository->all();
         dd($groups);
+    }
+
+    /**
+     * Returns an Group Object with the provided id.
+     *
+     * @return object
+     */
+    public function get($id)
+    {
+        $additional = $this->repository->find($id);
+        dd($additional);
     }
 
     /**

@@ -22,14 +22,25 @@ class IngredientController extends Controller
     }
 
     /**
-     * Returns all the ingredients.
+     * Returns an array of Ingredient objects.
      *
      * @return array
      */
-    public function index()
+    public function all()
     {
         $ingredients = $this->repository->all();
         dd($ingredients);
+    }
+
+    /**
+     * Returns an Ingredient Object with the provided id.
+     *
+     * @return object
+     */
+    public function get($id)
+    {
+        $additional = $this->repository->find($id);
+        dd($additional);
     }
 
     /**

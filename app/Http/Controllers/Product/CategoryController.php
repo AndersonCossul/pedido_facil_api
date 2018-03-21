@@ -22,14 +22,25 @@ class CategoryController extends Controller
     }
 
     /**
-     * Returns all the categories.
+     * Returns an array of Category objects.
      *
      * @return array
      */
-    public function index()
+    public function all()
     {
         $categories = $this->repository->all();
         dd($categories);
+    }
+
+    /**
+     * Returns an Category Object with the provided id.
+     *
+     * @return object
+     */
+    public function get($id)
+    {
+        $additional = $this->repository->find($id);
+        dd($additional);
     }
 
     /**
